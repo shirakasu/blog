@@ -36,3 +36,16 @@ npx storybook@latest init
 ```shell
 npm run storybook
 ```
+
+## Storyファイルの作成単位
+
+| 作成対象 | 説明 |
+| ------- | --- |
+| Component | 単一のUIコンポーネント(Button, Input, Cardなど) |
+| Composite | 複数のコンポーネントを組み合わせた機能(Form, Dialog, Tableなど) |
+| Layout    | ページ構造を定義するコンポーネント(Header, Sidebar, Gridなど) |
+| Page      | 完全なページ単位のコンポーネント(Login, Dashboard, Settingsなど) |
+| Template  | 再利用可能なページの雛形(ArticleTemplate, ProductTemplateなど) |
+| Hook      | カスタムフックの使用例(useForm, useAuthなど) |
+| Utility   | 共通の機能やヘルパー(DataFormatter, ThemeProviderなど) |
+| Pattern   | 特定のUIパターン(LoadingState, ErrorBoundaryなど) |
