@@ -33,7 +33,7 @@ export const Card: React.FC<CardProps> = ({
       onClick={!disabled ? onClick : undefined}
     >
       {imageUrl && <Image src={imageUrl} alt={title} className="w-full h-48 object-cover rounded-t-lg mb-4" width={18} height={18}/>}
-      <h2 className="text-xl font-semibold mb-2">{title}</h2>
+      <div className="text-xl font-semibold mb-2">{title}</div>
       <div className="text-gray-700">{content}</div>
     </div>
   );

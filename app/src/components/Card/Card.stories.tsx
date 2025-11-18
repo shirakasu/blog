@@ -18,6 +18,6 @@ export const Default: Story = {
   args: {
     title: "Card Title",
     content: "This is the content of the card.",
-    imageUrl: "http://www.baltana.com/animals/cute-cat-images-07756.html",
+    imageUrl: "https://www.baltana.com/files/wallpapers-36/Nothing-Phone-LED-Background-Wallpaper.jpg",
   },
 };
