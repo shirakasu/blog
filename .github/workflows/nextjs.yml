@@ -57,6 +57,7 @@ jobs:
         with:
           node-version: "20"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
+          working-directory: ./app
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -66,10 +67,12 @@ jobs:
           #
           # You may remove this line if you want to manage the configuration yourself.
           static_site_generator: next
+          working-directory: ./app
 
       - name: Restore cache
         uses: actions/cache@v4
         with:
+          working-directory: ./app
           path: |
             .next/cache
           # Generate a new cache whenever packages or source files change.
