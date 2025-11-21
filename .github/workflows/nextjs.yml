@@ -32,7 +32,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          sparce-checkout: app
+          sparse-checkout: app
 
       - name: Detect package manager
         id: detect-package-manager
