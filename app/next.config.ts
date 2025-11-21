@@ -3,6 +3,7 @@ import path from "path";
 
 const nextConfig: NextConfig = {
   /* config options here */
+  output: "export",
   webpack: config => {
     // Vue と同じように 「@ = src/」,「~ = src/」に設定する。
     // => モジュールのパス解決とエイリアスを設定している。
