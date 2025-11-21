@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Text } from "@/components/Text/Text";
 import { SiTypescript, SiNextdotjs, SiReact, SiTailwindcss, SiPython, SiDocker, SiAmazonwebservices, SiGo, SiGithub, SiX } from "react-icons/si";
 
 export default function Home() {
@@ -19,14 +20,14 @@ export default function Home() {
   return (
       <main className="px-4 max-w-4xl mx-auto py-20">
         <section className="mb-16">
-          <h1 className="text-4xl font-extrabold mb-4 text-gray-900">
-            Shirakasu Portfolio
-          </h1>
-          <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-            Web開発とサイバーセキュリティに情熱を持つITエンジニアです。<br />
-            社会課題を技術で解決することをミッションとしています。
-          </p>
-          <div className="flex gap-4">
+          <Text size="xl4" color="title" bold="extrabold">Shirakasu Portfolio</Text>
+          <div className="m-4">
+            <Text size="xl" color="primary" bold="bold">
+              Web開発とサイバーセキュリティに情熱を持つITエンジニアです。<br />
+              社会課題を技術で解決することをミッションとしています。
+            </Text>
+          </div>
+          <div className="flex gap-8">
             <Link href="/projects" className="bg-purple-300 text-gray-700 font-bold px-6 py-3 rounded-md hover:bg-purple-400 transition">
               実績を見る
             </Link>
