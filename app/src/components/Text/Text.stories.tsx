@@ -19,6 +19,7 @@ export const BasePrimary: Story = {
     children: "Today's weather is sunny.",
     size: "base",
     color: "primary",
+    bold: "normal",
   },
 };
 
@@ -27,6 +28,7 @@ export const SmallPrimary: Story = {
     children: "warning: this is protect",
     size: "sm",
     color: "tertiary",
+    bold: "normal",
   },
 };
 
@@ -36,6 +38,7 @@ export const LargeSecondary: Story = {
     children: "Tech List",
     size: "lg",
     color: "secondary",
+    bold: "bold",
   },
 };
 
@@ -44,5 +47,6 @@ export const ExtraLarge4Title: Story = {
     children: "Shirakasu Portfolio",
     size: "xl4",
     color: "title",
+    bold: "extrabold",
   },
 };

@@ -8,6 +8,8 @@ export interface TextProps {
   size?: "xs" | "sm" | "base" | "lg" | "xl" | "xl2" | "xl3" | "xl4";
   /** テキストの色 */
   color?: "title" | "primary" | "secondary" | "tertiary";
+  /** テキストの太さ */
+  bold?: "normal" | "bold" | "extrabold";
 }
 
 const sizeClassMap = {
@@ -28,14 +30,22 @@ const colorClassMap = {
   tertiary: "text-gray-400",
 };
 
+const fontWeightClassMap = {
+  normal: "font-normal",
+  bold: "font-bold",
+  extrabold: "font-extrabold",
+};
+
 export const Text: React.FC<TextProps> = ({
   children,
   size = "base",
   color = "primary",
+  bold = "normal"
 }: TextProps) => {
   const classNames = [
     sizeClassMap[size],
     colorClassMap[color],
+    fontWeightClassMap[bold],
   ].join(" ");
   
   return <p className={classNames}>{children}</p>;
