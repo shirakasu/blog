@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Text } from "@/components/Text/Text";
 import { SiTypescript, SiNextdotjs, SiReact, SiTailwindcss, SiPython, SiDocker, SiAmazonwebservices, SiGo, SiGithub, SiX } from "react-icons/si";
+import { Footer } from "@/components/Footer/Footer";
 
 export default function Home() {
   const tech_stack = [
@@ -54,6 +55,7 @@ export default function Home() {
             ))}
           </div>
         </section>
+        <Footer />
       </main>
     );
 }
